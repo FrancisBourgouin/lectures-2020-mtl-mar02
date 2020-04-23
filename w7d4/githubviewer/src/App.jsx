@@ -11,14 +11,10 @@ function App() {
 	const [name, setName] = useState("Francis");
 	const { commits, owner, repo, loading, updateOwnerAndRepo } = useGitHubAPI();
 	const scroll = useWindowScrollPosition();
-	// const [url, _loading, result, fetchUrl] = useAxiosGet();
-
-	// fetchUrl("http://google.com");
 
 	return (
 		<div className="App">
 			<h1>{name}'s Github viewer ! ;D</h1>
-			{/* <p>{JSON.stringify(result)}</p> */}
 			<CommitForm updateOwnerAndRepo={updateOwnerAndRepo} />
 			<h2>
 				Commits for {owner}'s {repo} repo

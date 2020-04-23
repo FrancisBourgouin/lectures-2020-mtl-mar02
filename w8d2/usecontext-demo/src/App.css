@@ -1,0 +1,7 @@
+div.dark {
+	background: #333;
+}
+div.dark header,
+div.dark section {
+	color: white;
+}
